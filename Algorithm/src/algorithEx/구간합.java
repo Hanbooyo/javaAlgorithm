@@ -10,8 +10,8 @@ public class 구간합 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
 		st = new StringTokenizer(br.readLine());
-		int D = Integer.parseInt(st.nextToken()); // 데이터의 개수
-		int N = Integer.parseInt(st.nextToken()); // case의 개수
+		int D = Integer.parseInt(st.nextToken()); // �뜲�씠�꽣�쓽 媛쒖닔
+		int N = Integer.parseInt(st.nextToken()); // case�쓽 媛쒖닔
 		
 		st = new StringTokenizer(br.readLine());
 //		int A[] = new int[D];
@@ -25,8 +25,8 @@ public class 구간합 {
 		
 		for(int j=0; j<N; j++) {
 			st = new StringTokenizer(br.readLine());
-			int start = Integer.parseInt(st.nextToken()); // 시작 점
-			int end = Integer.parseInt(st.nextToken()); // 끝 점
+			int start = Integer.parseInt(st.nextToken()); // �떆�옉 �젏
+			int end = Integer.parseInt(st.nextToken()); // �걹 �젏
 
 			System.out.println(S[end] - S[start-1]);
 		}

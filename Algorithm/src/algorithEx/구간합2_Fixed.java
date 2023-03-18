@@ -10,8 +10,8 @@ public class 구간합2_Fixed {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
 		st = new StringTokenizer(br.readLine());
-		int N = Integer.parseInt(st.nextToken()); //행 열 갯수
-		int Q = Integer.parseInt(st.nextToken()); //케이스 갯수
+		int N = Integer.parseInt(st.nextToken()); //�뻾 �뿴 媛��닔
+		int Q = Integer.parseInt(st.nextToken()); //耳��씠�뒪 媛��닔
 		int[][] S = new int[N+1][N+1];
 		for(int i=1; i<=N; i++) {
 			st = new StringTokenizer(br.readLine());
@@ -19,7 +19,7 @@ public class 구간합2_Fixed {
 				S[i][j] = Integer.parseInt(st.nextToken());
 			}
 		}
-		//구간 합 배열 만들기
+		//援ш컙 �빀 諛곗뿴 留뚮뱾湲�
 		int D[][] = new int[N+1][N+1];
 		for(int i=1; i<=N; i++) {
 			for(int j=1; j<=N; j++) {
@@ -28,11 +28,11 @@ public class 구간합2_Fixed {
 		}
 		
 		for(int i=0; i<Q; i++) {
-			st = new StringTokenizer(br.readLine()); // 테스트케이스 열 읽어오기
-			int[] T = new int[4]; // Test Case 배열
+			st = new StringTokenizer(br.readLine()); // �뀒�뒪�듃耳��씠�뒪 �뿴 �씫�뼱�삤湲�
+			int[] T = new int[4]; // Test Case 諛곗뿴
 			int sum=0;
 			for(int j=0; j<4; j++) {
-				T[j] = Integer.parseInt(st.nextToken()); //테스트 케이스 시작점 2개, 끝점 2개 담는 배열
+				T[j] = Integer.parseInt(st.nextToken()); //�뀒�뒪�듃 耳��씠�뒪 �떆�옉�젏 2媛�, �걹�젏 2媛� �떞�뒗 諛곗뿴
 			}
 			int result = D[T[2]][T[3]] - D[(T[0]-1)][T[3]] - D[T[2]][(T[1]-1)] + D[(T[0]-1)][(T[1]-1)] ;
 			System.out.println(result);

@@ -6,16 +6,16 @@ public class 시간복잡도_판별원리 {
 //		int N = 100000;
 //		int cnt = 0;
 //		for(int i=0; i<N; i++) {
-//			System.out.println("연산 횟수 : " + cnt++);
+//			System.out.println("�뿰�궛 �슏�닔 : " + cnt++);
 //		}
 		int N = 100000;
 		int cnt = 0;
 		for(int i=0; i<N; i++) {
 			for(int j=0; j<N; j++) {
-			System.out.println("연산 횟수 : " + cnt++);
+			System.out.println("�뿰�궛 �슏�닔 : " + cnt++);
 			}
 		}
-		// 시간복잡도 N²
+		// �떆媛꾨났�옟�룄 N짼
 	}
 
 }
